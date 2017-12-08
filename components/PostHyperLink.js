@@ -1,10 +1,26 @@
 import Link from 'next/link';
 
-const PostLink = (props) => (
+const PostLink = ({ post }) => (
   <li>
-    <Link as={`/posts/${props.id}`} href={`/post?title=${props.title}`}>
-      <a>{props.title}</a>
+    <Link as={`/p/${post.id}`} href={`/post?title=${post.title}`}>
+      <a>{post.title}</a>
     </Link>
+    <style jsx>{`
+      li {
+        list-style: none;
+        margin: 5px 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: blue;
+        font-family: "Arial";
+      }
+
+      a:hover {
+        opacity: 0.6;
+      }
+    `}</style>
   </li>
 );
 
