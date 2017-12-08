@@ -1,5 +1,7 @@
+import Container from '../components/MyLayout';
+
 export default () => (
-  <div>
+  <Container>
     <p>This is the about page</p>
-  </div>
+  </Container>
 );

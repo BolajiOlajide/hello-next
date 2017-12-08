@@ -1,13 +1,12 @@
 import Link from 'next/link';
 
 // components
-import Header from '../components/Header';
+import Container from '../components/MyLayout';
 
 const Index = () => (
-  <div>
-    <Header />
+  <Container>
     <p>Hello Next.js</p>
-  </div>
-)
+  </Container>
+);
 
 export default Index;
